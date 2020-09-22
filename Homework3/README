@@ -1,0 +1,29 @@
+This homework consisted of learning about encoding. 
+
+First, we examined the best way to encode 'BEEKEEPER' by doing it manually. Below I copied my notes from the code:
+
+
+#We want to transmit BEEKEEPER with the shortest and fastest transmission
+
+#We want to use symbols only from a set of three, with the space character reserved for separating. 
+
+# Zeros are faster than 1's by a factor of three (0.1 for a 0, 0.3 for a 1), so we want our letters used the most to have the most zeros. 
+
+FREQUENCIES:
+#B: 1
+#E: 5
+#K: 1
+#P: 1
+#R: 1
+
+#Since E has the most frequency, we want to make sure it has the most zero's in our algorithm and is prioritized. 
+#The frequency should determine priority. Since zero's transmit 3x the speed of 1's, we should use these the most for the highest priority. 
+
+#B: 00
+#E: 0
+#K: 000
+#P: 10
+#R: 01
+
+#Therefore E transmits at 0.1 ms, B transmits at 0.2 ms, and K/P/R all transmit at 0.3 ms, but they all have unique codes. 
+#We would then trasmit: 00 0 0 000 0 0 10 0 01
