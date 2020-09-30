@@ -2,4 +2,5 @@
 
 This homework involves creating Huffman encoding by using the alphabet letter frequencies. I did this for Homework 3 as well, but in this case I use the generic alphabet frequency for each letter instead of calculating the frequency based on the string itself. 
 
-This method of hard coding frequencies would save time if we wanted to encode a large string - there's no need to parse it then. Otherwise, the program is pretty much the same. 
+This method of hard coding frequencies would save time if we wanted to encode a large string - there's no need to parse it then. Otherwise, the program also includes the compression ratio by 
+calculating how many bits it uses versus how many bits it would use if transmitting the message regularly. 
