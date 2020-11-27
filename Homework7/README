@@ -1,0 +1,1 @@
+This code is adapted from the code supplied from class. The original code found the maximum flow of a graph - the adapted code adds on to it by supplying the minimum cuts. 
